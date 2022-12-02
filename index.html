@@ -3,13 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=`, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="/src/css/main.css" />
+    <script src="./src/js/login.js" type="module"></script>
+    <script src="./src/js/time.js" type="module"></script>
   </head>
   <body>
     <div class="main-wrapper">
-      <div class="main-content"></div>
+      <div class="main-content">
+        <div class="login-popup hidden">
+          <div class="popup__profile"></div>
+          <p>Hello World</p>
+          <input
+            type="text"
+            name="text"
+            id="loginInput"
+            placeholder="이름을 입력해 주세요"
+          />
+          <button id="loginBtn">로그인</button>
+        </div>
+        <div class="todoList-wrapper">
+          <div class="window"></div>
+          <div class=""></div>
+        </div>
+      </div>
       <div class="main-bottom">
         <svg
           xmlns="http://www.w3.org/2000/svg"

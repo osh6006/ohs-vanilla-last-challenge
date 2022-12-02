@@ -1,0 +1,168 @@
+/* 전역 */
+* {
+  box-sizing: border-box;
+}
+
+.window {
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #092756;
+  background: -moz-radial-gradient(
+      0% 100%,
+      ellipse cover,
+      rgba(104, 128, 138, 0.4) 10%,
+      rgba(138, 114, 76, 0) 40%
+    ),
+    -moz-linear-gradient(top, rgba(57, 173, 219, 0.25) 0%, rgba(42, 60, 87, 0.4)
+          100%),
+    -moz-linear-gradient(-45deg, #670d10 0%, #092756 100%);
+  background: -webkit-radial-gradient(
+      0% 100%,
+      ellipse cover,
+      rgba(104, 128, 138, 0.4) 10%,
+      rgba(138, 114, 76, 0) 40%
+    ),
+    -webkit-linear-gradient(top, rgba(57, 173, 219, 0.25) 0%, rgba(
+            42,
+            60,
+            87,
+            0.4
+          )
+          100%),
+    -webkit-linear-gradient(-45deg, #670d10 0%, #092756 100%);
+  background: -o-radial-gradient(
+      0% 100%,
+      ellipse cover,
+      rgba(104, 128, 138, 0.4) 10%,
+      rgba(138, 114, 76, 0) 40%
+    ),
+    -o-linear-gradient(top, rgba(57, 173, 219, 0.25) 0%, rgba(42, 60, 87, 0.4)
+          100%),
+    -o-linear-gradient(-45deg, #670d10 0%, #092756 100%);
+  background: -ms-radial-gradient(
+      0% 100%,
+      ellipse cover,
+      rgba(104, 128, 138, 0.4) 10%,
+      rgba(138, 114, 76, 0) 40%
+    ),
+    -ms-linear-gradient(top, rgba(57, 173, 219, 0.25) 0%, rgba(42, 60, 87, 0.4)
+          100%),
+    -ms-linear-gradient(-45deg, #670d10 0%, #092756 100%);
+  background: -webkit-radial-gradient(
+      0% 100%,
+      ellipse cover,
+      rgba(104, 128, 138, 0.4) 10%,
+      rgba(138, 114, 76, 0) 40%
+    ),
+    linear-gradient(
+      to bottom,
+      rgba(57, 173, 219, 0.25) 0%,
+      rgba(42, 60, 87, 0.4) 100%
+    ),
+    linear-gradient(135deg, #670d10 0%, #092756 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3E1D6D', endColorstr='#092756',GradientType=1 );
+}
+
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 1440px;
+  height: 80%;
+  padding: 10px;
+  border-radius: 15px;
+  background-color: rgb(34, 34, 34);
+}
+
+.main-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: 3px solid white;
+  border-radius: 15px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: top;
+  background-image: url(http://bit.ly/2gPLxZ4);
+}
+
+/* 로그인 */
+.login-popup {
+  position: absolute;
+  width: 600px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background: inherit;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 15px;
+}
+
+.login-popup .popup__profile {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-size: cover;
+  background-image: url("../../images/profile.jpg");
+}
+
+.login-popup input {
+  width: 150px;
+  border-radius: 2px;
+  padding: 10px 10px;
+  border: 0;
+  background-color: rgba(0, 0, 0, 0.233);
+  color: white;
+  text-align: center;
+}
+
+.login-popup button {
+  border-radius: 2px;
+  padding: 5px 15px;
+  border: 0;
+  color: white;
+  margin-top: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+
+.login-popup button:hover {
+  scale: 1.15;
+}
+
+/* tD list */
+
+/* 바텀 */
+
+.main-bottom {
+  width: 45px;
+  height: 45px;
+  color: white;
+  border: 3px solid white;
+  border-radius: 50%;
+  margin-bottom: -4px;
+  cursor: pointer;
+  transition: all 1s ease-in-out;
+  padding: 5px;
+}
+
+.main-bottom :hover {
+  color: olive;
+}
+
+.hidden {
+  display: none;
+}
