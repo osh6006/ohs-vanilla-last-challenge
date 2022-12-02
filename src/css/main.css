@@ -1,9 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Jua&display=swap");
 /* 전역 */
 * {
   box-sizing: border-box;
+  font-family: "Jua", sans-serif;
 }
 
 .window {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  background-color: #092756;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.window-title {
+  color: white;
+  font-weight: 600;
+}
+
+.window-options {
+  display: flex;
+  gap: 5px;
+  color: white;
+}
+
+.window-options svg {
+  width: 20px;
 }
 
 body {
@@ -11,6 +37,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
   background: #092756;
   background: -moz-radial-gradient(
       0% 100%,
@@ -74,7 +101,7 @@ body {
   align-items: center;
   gap: 10px;
   width: 1440px;
-  height: 80%;
+  height: 90%;
   padding: 10px;
   border-radius: 15px;
   background-color: rgb(34, 34, 34);
@@ -86,6 +113,7 @@ body {
   height: 100%;
   border: 3px solid white;
   border-radius: 15px;
+  padding: 20px;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -144,6 +172,80 @@ body {
 }
 
 /* tD list */
+.todoList-wrapper {
+  width: 450px;
+}
+.todoList-content {
+  height: 500px;
+  padding: 20px;
+  background-color: bisque;
+  overflow-y: scroll;
+}
+.todoList-item {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  border-radius: 10px;
+  list-style-type: none;
+  margin: 0;
+  gap: 20px;
+  padding: 0;
+}
+
+.todoList-item li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 1.2rem;
+}
+
+.item-deleteBtn {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.item-deleteBtn:hover {
+  color: red;
+}
+
+.todoList-send {
+  height: 120px;
+  background-color: white;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.todoList-input {
+  width: 100%;
+  height: 80px;
+  font-size: 1.5rem;
+  outline: none;
+  border: none;
+  border-bottom: 1px #092756 solid;
+  padding-left: 10px;
+}
+
+.todoList-input-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 40px;
+  background: none;
+  cursor: pointer;
+  border: none;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.todoList-input-button:hover {
+  background-color: rgb(216, 216, 216);
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
 
 /* 바텀 */
 

@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="/src/css/main.css" />
-    <script src="./src/js/login.js" type="module"></script>
-    <script src="./src/js/time.js" type="module"></script>
+    <script src="./src/js/login.js" defer></script>
+    <script src="./src/js/todoList.js" defer></script>
   </head>
   <body>
     <div class="main-wrapper">
@@ -24,8 +24,62 @@
           <button id="loginBtn">로그인</button>
         </div>
         <div class="todoList-wrapper">
-          <div class="window"></div>
-          <div class=""></div>
+          <div class="window">
+            <div class="window-title">오늘의 할일</div>
+            <div class="window-options">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 12h-15"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M16.5 8.25V6a2.25 2.25 0 00-2.25-2.25H6A2.25 2.25 0 003.75 6v8.25A2.25 2.25 0 006 16.5h2.25m8.25-8.25H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-7.5A2.25 2.25 0 018.25 18v-1.5m8.25-8.25h-6a2.25 2.25 0 00-2.25 2.25v6"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="todoList-content">
+            <ul class="todoList-item"></ul>
+          </div>
+          <form class="todoList-send">
+            <input class="todoList-input" id="todoList-input" type="text" />
+            <button type="submit" class="todoList-input-button" id="sendBtn">
+              ADD
+            </button>
+          </form>
         </div>
       </div>
       <div class="main-bottom">
