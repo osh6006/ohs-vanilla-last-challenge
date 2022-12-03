@@ -10,6 +10,7 @@
     <script src="./src/js/todoList.js" defer></script>
     <script src="./src/js/time.js" defer></script>
     <script src="./src/js/quotes.js" defer></script>
+    <script src="./src/js/waether.js" defer></script>
   </head>
   <body>
     <div class="main-wrapper">
@@ -30,7 +31,7 @@
         <!-- todo list -->
         <div class="todoList-wrapper">
           <div class="window">
-            <div class="window-title">오늘의 할일</div>
+            <div class="window-title">오늘의 할일 📄</div>
             <div class="window-options">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -91,7 +92,7 @@
         <div class="middle-wrapper">
           <div class="time-wrapper">
             <div class="window">
-              <div class="window-title">지금은 몇시 ?</div>
+              <div class="window-title">지금은 몇시 ? 🕓</div>
               <div class="window-options">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -144,7 +145,7 @@
 
           <div class="quotes-wrapper">
             <div class="window">
-              <div class="window-title">삶의 의미있는 한 조각</div>
+              <div class="window-title">삶의 의미있는 한 조각 🍕</div>
               <div class="window-options">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -191,19 +192,121 @@
               </div>
             </div>
             <div class="quotes-contents">
-              <h1 class="quotes-eng">
-                In order to succeed, we must first believe that we can.
-              </h1>
-              <h1 class="quotes-kr">
-                성공하기 위해서, 우리는 먼저 우리 자신이 할 수 있다는 것을
-                믿어야 한다.
-              </h1>
-              <p class="quotes-author">- Nikos -</p>
+              <h1 class="quotes-eng"></h1>
+              <h1 class="quotes-kr"></h1>
+              <p class="quotes-author"></p>
             </div>
           </div>
         </div>
 
-        <!-- weather -->
+        <!-- waether & luck -->
+        <div>
+          <div class="waether-wrapper">
+            <div class="window">
+              <div class="window-title">오늘 뭐 입고 가야되지 ? ☔</div>
+              <div class="window-options">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M19.5 12h-15"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M16.5 8.25V6a2.25 2.25 0 00-2.25-2.25H6A2.25 2.25 0 003.75 6v8.25A2.25 2.25 0 006 16.5h2.25m8.25-8.25H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-7.5A2.25 2.25 0 018.25 18v-1.5m8.25-8.25h-6a2.25 2.25 0 00-2.25 2.25v6"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="waether-contents">
+              <h1 class="waether-city">Seoul</h1>
+              <h1 class="waether-nal">Cloud</h1>
+              <h1 class="waether-on">30</h1>
+            </div>
+          </div>
+
+          <!-- luck -->
+          <div class="luck-wrapper">
+            <div class="window">
+              <div class="window-title">오늘의 운세 🎲</div>
+              <div class="window-options">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M19.5 12h-15"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M16.5 8.25V6a2.25 2.25 0 00-2.25-2.25H6A2.25 2.25 0 003.75 6v8.25A2.25 2.25 0 006 16.5h2.25m8.25-8.25H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-7.5A2.25 2.25 0 018.25 18v-1.5m8.25-8.25h-6a2.25 2.25 0 00-2.25 2.25v6"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="main-bottom">
         <svg

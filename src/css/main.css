@@ -277,27 +277,47 @@ body {
 .quotes-wrapper {
   margin-top: 150px;
   height: 200px;
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
-  backdrop-filter: blur(60px);
-  -webkit-backdrop-filter: blur(60px);
 }
 
 .quotes-contents {
   padding: 10px;
-  color: white;
+  color: black;
+  background-color: beige;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 
 .quotes-contents h1 {
   margin: 0;
+  margin-top: 20px;
   font-size: 25px;
 }
 
 .quotes-contents p {
-  margin-top: 200px;
   margin: 0;
+  margin: 10px;
   font-size: 25px;
   text-align: right;
+}
+
+/* waether */
+.waether-wrapper {
+  margin-top: 100px;
+  width: 500px;
+}
+
+.waether-contents {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+  backdrop-filter: blur(60px);
+  -webkit-backdrop-filter: blur(60px);
+}
+
+/* luck */
+.luck-wrapper {
+  margin-top: 100px;
 }
 
 /* bottom */
