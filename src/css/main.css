@@ -101,6 +101,7 @@ body {
   align-items: center;
   gap: 10px;
   width: 1440px;
+  min-width: 1440px;
   height: 90%;
   padding: 10px;
   border-radius: 15px;
@@ -180,7 +181,7 @@ body {
 .todoList-content {
   height: 500px;
   padding: 20px;
-  background-color: bisque;
+  background-color: rgba(175, 139, 248, 0.87);
   overflow-y: scroll;
 }
 .todoList-item {
@@ -273,6 +274,31 @@ body {
 }
 
 /* quotes */
+.quotes-wrapper {
+  margin-top: 150px;
+  height: 200px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  backdrop-filter: blur(60px);
+  -webkit-backdrop-filter: blur(60px);
+}
+
+.quotes-contents {
+  padding: 10px;
+  color: white;
+}
+
+.quotes-contents h1 {
+  margin: 0;
+  font-size: 25px;
+}
+
+.quotes-contents p {
+  margin-top: 200px;
+  margin: 0;
+  font-size: 25px;
+  text-align: right;
+}
 
 /* bottom */
 .main-bottom {
