@@ -109,6 +109,8 @@ body {
 
 .main-content {
   position: relative;
+  display: flex;
+  gap: 50px;
   width: 100%;
   height: 100%;
   border: 3px solid white;
@@ -247,8 +249,32 @@ body {
   border-bottom-left-radius: 10px;
 }
 
-/* 바텀 */
+/* time */
+.time-wrapper {
+  width: 450px;
+}
 
+.time-contents {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 230px;
+  background: inherit;
+  color: white;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  backdrop-filter: blur(60px);
+  -webkit-backdrop-filter: blur(60px);
+}
+
+.time-contents h1 {
+  font-size: 5.5rem;
+  margin: 0;
+}
+
+/* quotes */
+
+/* bottom */
 .main-bottom {
   width: 45px;
   height: 45px;
