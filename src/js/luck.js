@@ -3,6 +3,7 @@ class luck {
   diceResult;
   luckResult;
   luckMsgEl;
+  luckDesc;
   luckMsg = [
     {
       className: "one",
@@ -38,6 +39,7 @@ class luck {
     this.luckResult = document.querySelector(".luck-result");
     this.luckMsgEl = document.querySelector(".luck-msg");
     this.diceResult = document.querySelector(".dice-result .side");
+    this.luckDesc = document.querySelector(".luck-desc");
   }
   addEvent() {
     this.dice.addEventListener("click", this.diceResultHandle.bind(this));
@@ -60,6 +62,7 @@ class luck {
     );
     setTimeout(() => {
       this.dice.style.display = "none";
+      this.luckDesc.style.display = "none";
       this.luckResult.style.display = "flex";
     }, 2000);
     const randomIndex = Math.floor(Math.random() * this.luckMsg.length);
