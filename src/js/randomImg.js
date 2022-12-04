@@ -7,6 +7,19 @@ class RandomImg {
     "https://images.pexels.com/photos/4512439/pexels-photo-4512439.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     "https://images.pexels.com/photos/923360/pexels-photo-923360.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
   ];
-  constructor() {}
-  assignElement() {}
+  mainContentsEl;
+  constructor() {
+    this.assignElement();
+    this.test();
+  }
+  assignElement() {
+    this.mainContentsEl = document.querySelector(".main-content");
+  }
+  test() {
+    const randomIndex = Math.floor(Math.random() * this.randomURL.length);
+    const selectedImg = this.randomURL[randomIndex];
+    this.mainContentsEl.style.backgroundImage = `url(${selectedImg})`;
+  }
 }
+
+new RandomImg();
